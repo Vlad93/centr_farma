@@ -171,11 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       if(!searchInput.value) {
         document.querySelector('.section-main__container').innerHTML = content;
-        scrollStart()
-        return;
-      } else {
-        document.querySelector('.section-main__container').innerHTML = changeLayout;
-        scrollStart()
         document.querySelectorAll('[popupOpen]').forEach((e) => {
           e.addEventListener('click', (e) => {
             popupClose();
@@ -183,6 +178,20 @@ document.addEventListener('DOMContentLoaded', function() {
             popupOpen(target);
           });
         });
+        scrollStart();
+        document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
+        return;
+      } else {
+        document.querySelector('.section-main__container').innerHTML = changeLayout;
+        document.querySelectorAll('[popupOpen]').forEach((e) => {
+          e.addEventListener('click', (e) => {
+            popupClose();
+            var target = e.target.getAttribute('popupOpen');
+            popupOpen(target);
+          });
+        });
+        scrollStart();
+        document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
       }
     });
   }
