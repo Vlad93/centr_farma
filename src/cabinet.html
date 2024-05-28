@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1">
+  <!-- plagins css  -->
+  <link rel="stylesheet" href="css/choices.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Личный кабинет - Матвей Степанович</title>
+</head>
+<body>
+  <div class="bg-wrap">
+  <header class="header header__cabinet">
+    <div class="container">
+      <div class="header__wrap">
+        <a href="/" class="header__logo-wrap">
+          <img src="img/logo.svg" alt="" class="header__logo-img">
+        </a>
+        <div class="header__login">
+          <span class="header__login-icon">МС</span>
+          <span class="header__login-text">Матвей Степанович</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section-monitoring section">
+    <div class="container">
+      <div class="section-monitoring__wrap">
+        <div class="section-monitoring__content">
+          <h1 class="section-monitoring__title title">
+            Мониторинг выкладки
+          </h1>
+          <form action="" class="form search-form">
+            <label for="search" class="form__label">
+              <input type="text" class="form-input form-input_search" placeholder="Введите адрес или название аптеки">
+              <button class="search-form__btn">
+                  <svg class="search-form__btn-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.4 27.5L15.95 18.05C15.2 18.65 14.3375 19.125 13.3625 19.475C12.3875 19.825 11.35 20 10.25 20C7.525 20 5.21875 19.0563 3.33125 17.1688C1.44375 15.2813 0.5 12.975 0.5 10.25C0.5 7.525 1.44375 5.21875 3.33125 3.33125C5.21875 1.44375 7.525 0.5 10.25 0.5C12.975 0.5 15.2813 1.44375 17.1688 3.33125C19.0563 5.21875 20 7.525 20 10.25C20 11.35 19.825 12.3875 19.475 13.3625C19.125 14.3375 18.65 15.2 18.05 15.95L27.5 25.4L25.4 27.5ZM10.25 17C12.125 17 13.7188 16.3438 15.0313 15.0313C16.3438 13.7188 17 12.125 17 10.25C17 8.375 16.3438 6.78125 15.0313 5.46875C13.7188 4.15625 12.125 3.5 10.25 3.5C8.375 3.5 6.78125 4.15625 5.46875 5.46875C4.15625 6.78125 3.5 8.375 3.5 10.25C3.5 12.125 4.15625 13.7188 5.46875 15.0313C6.78125 16.3438 8.375 17 10.25 17Z" fill="#0031CF"/>
+                  </svg>
+              </button>
+              <button type="button" class="search-form__clean-btn">
+                <svg class="search-form__clean-btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.8 20.4C23.4627 21.0627 23.4627 22.1373 22.8 22.8C22.1373 23.4627 21.0627 23.4627 20.4 22.8L12 14.4L3.6 22.8C2.93726 23.4627 1.86274 23.4627 1.2 22.8C0.537258 22.1373 0.537258 21.0627 1.2 20.4L9.6 12L1.2 3.6C0.537258 2.93726 0.537258 1.86274 1.2 1.2C1.86274 0.537258 2.93726 0.537258 3.6 1.2L12 9.6L20.4 1.2C21.0627 0.537257 22.1373 0.537257 22.8 1.2C23.4627 1.86274 23.4627 2.93726 22.8 3.6L14.4 12L22.8 20.4Z" fill="#535353"/>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <main>
+    <section class="section-filters secrion">
+      <div class="container">
+        <form action="" class="section-filters__form form filters-form">
+          <div class="filters-form__grid">
+            <div class="filters-form__item">
+              <label for="brand" class="filters-form__label form__label">
+                Выберите бренд препарата
+              </label>
+              <select name="brand" id="brand" class="form-select filters-form__select">
+                <option value="Все бренды" selected class="first-selected">Все бренды</option>
+                <option value="Сандоз">Сандоз</option>
+                <option value="АстраЗенека">АстраЗенека</option>
+                <option value="Штада Арцнаймиттель АГ">Штада Арцнаймиттель АГ</option>
+                <option value="Юнифарм ООО">Юнифарм ООО</option>
+              </select>
+            </div>
+            <div class="filters-form__item">
+              <label for="drugs" class="filters-form__label form__label">
+                Выберите название препарата
+              </label>
+              <select name="drugs" id="drugs" class="form-select filters-form__select">
+                <option value="Все препараты" selected class="first-selected">Все препараты</option>
+                <option value="Линекс">Линекс</option>
+                <option value="Иммунал">Иммунал</option>
+                <option value="Банеоцин">Банеоцин</option>
+                <option value="Ацц">Ацц</option>
+                <option value="Пульмикорт">Пульмикорт</option>
+                <option value="Гексорал">Гексорал</option>
+                <option value="Микролакс">Микролакс</option>
+                <option value="Тизин">Тизин</option>
+                <option value="Никоретте">Никоретте</option>
+                <option value="Мотилиум">Мотилиум</option>
+                <option value="Гексо Бронхо">Гексо Бронхо</option>
+                <option value="Витрум">Витрум</option>
+                <option value="Артра">Артра</option>
+                <option value="Грипмакс">Грипмакс</option>
+                <option value="Стрессовит">Стрессовит</option>
+              </select>
+            </div>
+            <div class="filters-form__item">
+              <label for="period" class="filters-form__label form__label">
+                Выберите период
+              </label>
+              <select name="period" id="period" class="form-select filters-form__select">
+                <option value="Всё время" selected class="first-selected">Всё время</option>
+                <option value="Сегодня">Сегодня</option>
+                <option value="Вчера">Вчера</option>
+                <option value="За неделю ">За неделю </option>
+                <option value="За месяц">За месяц</option>
+              </select>
+            </div>
+            <a href="#" class="filters-form__btn btn btn_red" download>Скачать отчёт в xlsx</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section-main">
+      <div class="container section-main__container">
+        <div class="section-main__imges">
+          <div class="section-main__img-wrap">
+            <img src="img/grafic-all.webp" alt="" class="section-main__img">
+          </div>
+          <div class="section-main__img-wrap">
+            <img src="img/table-all.webp" alt="" class="section-main__img">
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Регион</th>
+                    <th>Название аптеки</th>
+                    <th>Адрес аптеки</th>
+                    <th>Дата последней фотографии</th>
+                    <th>Общее кол-во фотографий</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 1</button></td>
+                <td>Череповец, Шекнинский, 25</td>
+                <td>5/25/2025</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 2</button></td>
+                <td>Череповец, Первомайская, 20</td>
+                <td>5/26/2025</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 3</button></td>
+                <td>Череповец, Первомайская, 45</td>
+                <td>5/26/2025</td>
+                <td>52</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 4</button></td>
+                <td>Череповец, Наседкина, 21</td>
+                <td>5/27/2025</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 5</button></td>
+                <td>Череповец, Наседкина, 10а</td>
+                <td>5/27/2025</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 6</button></td>
+                <td>Череповец, Ломоносова, 30</td>
+                <td>5/28/2025</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 7</button></td>
+                <td>Череповец, Горького, 85а</td>
+                <td>5/28/2025</td>
+                <td>64</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 8</button></td>
+                <td>Череповец, Гоголя, 33</td>
+                <td>5/28/2025</td>
+                <td>47</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 9</button></td>
+                <td>Череповец, Ленина, 86</td>
+                <td>5/28/2025</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 10</button></td>
+                <td>Череповец, пр.Октябрьский, 82</td>
+                <td>5/29/2025</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 11</button></td>
+                <td>Череповец, Юбилейная, 66</td>
+                <td>5/29/2025</td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 12</button></td>
+                <td>Череповец, Металлургов, 30</td>
+                <td>5/29/2025</td>
+                <td>53</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 13</button></td>
+                <td>Череповец, Олимпийская, 11</td>
+                <td>5/30/2025</td>
+                <td>54</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Вологодская область</td>
+                <td><button class="table-btn" popupOpen="apteka">Аптека 14</button></td>
+                <td>Череповец, Наседкина, 18</td>
+                <td>5/30/2025</td>
+                <td>42</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <a href="/" class="footer__logo-wrap">
+          <img src="img/logo-blue.svg" alt="" class="footer__logo-img">
+        </a>
+        <a href="" class="footer__policity-link" target="_blank">Политика конфиденциальности</a>
+        <div class="footer__copyrights">
+          © 2019-2024 <a href="https://centerpharma.ru/" class="footer__link" target="_blank">CenterPharma</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="preloader"></div>
+
+  <!-- apteka popup  -->
+  <div class="popup apteka-popup" popupID="apteka">
+    <div class="popup__container">
+      <div class="popup__block">
+        <div class="popup__content">
+          <h3 class="popup__title apteka-popup__title">
+            Аптека 1
+          </h3>
+          <div class="apteka-popup__man">
+            <span class="apteka-popup__job">
+              Ответственное лицо
+            </span>
+            <span class="apteka-popup__name">
+              Васильев Осип Артёмович
+            </span>
+            <a href="tel:79175075266" class="apteka-popup__phone">7(917) 507-52-66</a>
+          </div>
+          <div class="apteka-popup__info">
+            <div class="apteka-popup__info-item">
+              <div class="apteka-popup__info-item-title">
+                Регион
+              </div>
+              <p class="apteka-popup__info-item-text">
+                Вологодская область
+              </p>
+            </div>
+            <div class="apteka-popup__info-item">
+              <div class="apteka-popup__info-item-title">
+                Адрес
+              </div>
+              <p class="apteka-popup__info-item-text">
+                Ломоносова 30
+              </p>
+            </div>
+            <div class="apteka-popup__info-item">
+              <div class="apteka-popup__info-item-title">
+                Кол-во фотографий
+              </div>
+              <p class="apteka-popup__info-item-text">
+                646
+              </p>
+            </div>
+            <div class="apteka-popup__info-item">
+              <div class="apteka-popup__info-item-title">
+                Выполнение плана
+              </div>
+              <p class="apteka-popup__info-item-text">
+                65%
+              </p>
+            </div>
+          </div>
+          <div class="apteka-popup__gallery">
+            <div class="apteka-popup__gallery-img-wrap">
+              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
+            </div>
+            <div class="apteka-popup__gallery-img-wrap">
+              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
+            </div>
+            <div class="apteka-popup__gallery-img-wrap">
+              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
+            </div>
+            <div class="apteka-popup__gallery-img-wrap">
+              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
+            </div>
+          </div>
+          <div class="popup__close apteka-popup__close" popupClose_JS>
+            <svg class="popup__close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.8 20.4C23.4627 21.0627 23.4627 22.1373 22.8 22.8C22.1373 23.4627 21.0627 23.4627 20.4 22.8L12 14.4L3.6 22.8C2.93726 23.4627 1.86274 23.4627 1.2 22.8C0.537258 22.1373 0.537258 21.0627 1.2 20.4L9.6 12L1.2 3.6C0.537258 2.93726 0.537258 1.86274 1.2 1.2C1.86274 0.537258 2.93726 0.537258 3.6 1.2L12 9.6L20.4 1.2C21.0627 0.537257 22.1373 0.537257 22.8 1.2C23.4627 1.86274 23.4627 2.93726 22.8 3.6L14.4 12L22.8 20.4Z" fill="#535353"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="popup__blur" popupClose_JS></div>
+  </div>
+</div>
+ <!-- Login popup  -->
+  <script src="js/choices.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
