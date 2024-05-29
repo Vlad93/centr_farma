@@ -636,9 +636,11 @@ body {
 }
 .choices__inner {
   padding: 1.25vw;
-  font-size: 1.2vw;
-  line-height: 1.3em;
+  /* font-size: 1em; */
+  line-height: 1em;
+  font-size: 1.25vw;
   border-radius: 12px;
+  vertical-align: middle;
   border: 2px solid #D6D6D6;
   background-color: #fff;
   min-height: auto;
@@ -648,6 +650,8 @@ body {
   white-space: nowrap; /* Запрещаем перенос текста на новую строку */
   overflow: hidden; /* Скрываем содержимое, выходящее за рамки элемента */
   text-overflow: ellipsis;
+  line-height: 1em;
+  font-size: 1.25vw;
 }
 .is-open .choices__inner {
   padding: 1.25vw;
@@ -668,17 +672,19 @@ body {
   max-height: none;
 }
 .choices[data-type*=select-one]::after {
+  margin: 0;
   border: none;
   display: block;
   width: 1.25vw;
   height: 1.25vw;
-  top: 40%;
+  top: 50%;
   right: 1.4583333333vw;
-  background: url('../img/icons/arrow-down.svg') no-repeat center / 0.83333333vw auto;
+  transform: translateY(-50%);
+  background: url('../img/icons/arrow-down.svg') no-repeat center / 0.83333333vw 0.83333333vw;
   transition: transform .2s ease;
 }
 .choices[data-type*=select-one].is-open::after {
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 .choices__list--dropdown .choices__item {
   font-size: 1.04166666666vw;
@@ -774,9 +780,10 @@ body {
 }
 
 .filters-form__btn {
-  padding: 1.25vw 1.04167vw;
-  font-size: 1.0416666666vw;
-  /* ширина остается 25%, так как это процентное значение */
+  /* padding: 1.25vw 1.04167vw; */
+  padding: calc(1.25vw + 2px) calc(1.04166666666vw + 2px);
+  font-size: 1.25vw;
+  line-height: 1.144em;
 }
 /* @media(max-width: 1500px) {
   .choices__inner {
@@ -1062,6 +1069,6 @@ th, td {
     font-size: 24px;
   }
   .choices__inner, .filters-form__label, .filters-form__btn {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
