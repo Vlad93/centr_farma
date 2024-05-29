@@ -785,6 +785,9 @@ body {
   font-size: 1.25vw;
   line-height: 1.144em;
 }
+.choices[data-type*=select-one].is-open:after {
+  margin: 0;
+}
 /* @media(max-width: 1500px) {
   .choices__inner {
     font-size: 20px;
