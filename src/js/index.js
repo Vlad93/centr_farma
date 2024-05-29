@@ -162,14 +162,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       document.querySelector('.search-form__clean-btn').addEventListener('click', (e) => {
         searchInput.value = '';
-        e.target.classList.remove('show');
-        searchInput.focus();
-        // document.querySelector('.section-main__container').innerHTML = content;
+        searchForm.classList.remove('searched');
+        e.currentTarget.classList.remove('show');
+        // searchInput.focus();
+        document.querySelector('.section-main__container').innerHTML = content;
+        document.querySelectorAll('[popupOpen]').forEach((e) => {
+          e.addEventListener('click', (e) => {
+            popupClose();
+            var target = e.target.getAttribute('popupOpen');
+            popupOpen(target);
+          });
+        });
+        scrollStart();
       });
     }
     searchForm.addEventListener('submit', (e) => {
       e.preventDefault();
       if(!searchInput.value) {
+        searchForm.classList.remove('searched');
         document.querySelector('.section-main__container').innerHTML = content;
         document.querySelectorAll('[popupOpen]').forEach((e) => {
           e.addEventListener('click', (e) => {
@@ -182,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
         return;
       } else {
+        searchForm.classList.add('searched');
         document.querySelector('.section-main__container').innerHTML = changeLayout;
         document.querySelectorAll('[popupOpen]').forEach((e) => {
           e.addEventListener('click', (e) => {

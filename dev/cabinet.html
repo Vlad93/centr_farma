@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/choices.min.css">
   <!-- css -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <link rel="stylesheet" href="css/style.css">
   <!-- favicon  -->
   <link rel="shortcut icon" href="img/favicon.png">
@@ -274,6 +275,11 @@
   <div class="popup apteka-popup" popupID="apteka">
     <div class="popup__container">
       <div class="popup__block">
+        <div class="popup__close apteka-popup__close" popupClose_JS>
+          <svg class="popup__close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.8 20.4C23.4627 21.0627 23.4627 22.1373 22.8 22.8C22.1373 23.4627 21.0627 23.4627 20.4 22.8L12 14.4L3.6 22.8C2.93726 23.4627 1.86274 23.4627 1.2 22.8C0.537258 22.1373 0.537258 21.0627 1.2 20.4L9.6 12L1.2 3.6C0.537258 2.93726 0.537258 1.86274 1.2 1.2C1.86274 0.537258 2.93726 0.537258 3.6 1.2L12 9.6L20.4 1.2C21.0627 0.537257 22.1373 0.537257 22.8 1.2C23.4627 1.86274 23.4627 2.93726 22.8 3.6L14.4 12L22.8 20.4Z" fill="#535353"/>
+          </svg>
+        </div>
         <div class="popup__content">
           <h3 class="popup__title apteka-popup__title">
             Аптека 1
@@ -322,23 +328,18 @@
             </div>
           </div>
           <div class="apteka-popup__gallery">
-            <div class="apteka-popup__gallery-img-wrap">
+            <a href="img/popup-img.webp" data-fancybox="gallery" class="apteka-popup__gallery-img-wrap">
               <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
-            </div>
-            <div class="apteka-popup__gallery-img-wrap">
+            </a>
+            <a href="img/popup-img.webp" data-fancybox="gallery" class="apteka-popup__gallery-img-wrap">
               <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
-            </div>
-            <div class="apteka-popup__gallery-img-wrap">
+            </a>
+            <a href="img/popup-img.webp" data-fancybox="gallery" class="apteka-popup__gallery-img-wrap">
+              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img" >
+            </a>
+            <a href="img/popup-img.webp" data-fancybox="gallery" class="apteka-popup__gallery-img-wrap">
               <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
-            </div>
-            <div class="apteka-popup__gallery-img-wrap">
-              <img src="img/popup-img.webp" alt="" class="apteka-popup__gallery-img">
-            </div>
-          </div>
-          <div class="popup__close apteka-popup__close" popupClose_JS>
-            <svg class="popup__close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.8 20.4C23.4627 21.0627 23.4627 22.1373 22.8 22.8C22.1373 23.4627 21.0627 23.4627 20.4 22.8L12 14.4L3.6 22.8C2.93726 23.4627 1.86274 23.4627 1.2 22.8C0.537258 22.1373 0.537258 21.0627 1.2 20.4L9.6 12L1.2 3.6C0.537258 2.93726 0.537258 1.86274 1.2 1.2C1.86274 0.537258 2.93726 0.537258 3.6 1.2L12 9.6L20.4 1.2C21.0627 0.537257 22.1373 0.537257 22.8 1.2C23.4627 1.86274 23.4627 2.93726 22.8 3.6L14.4 12L22.8 20.4Z" fill="#535353"/>
-            </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -347,9 +348,13 @@
   </div>
 </div>
  <!-- Login popup  -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/lazyload.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]');
+  </script>
 </body>
 </html>
