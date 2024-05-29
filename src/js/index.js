@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
           });
         });
         scrollStart();
-        document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
+        // document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
         return;
       } else {
         searchForm.classList.add('searched');
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
           });
         });
         scrollStart();
-        document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
+        // document.querySelector('.section-main__container').scrollIntoView({ behavior: 'smooth' });
       }
     });
   }

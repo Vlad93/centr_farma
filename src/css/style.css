@@ -83,13 +83,13 @@ body {
   padding: 0 40px;
 }
 .btn {
-  padding: 24px 36px;
+  padding: 1.25vw 1.875vw;
   display: block;
   cursor: pointer;
   border: none;
   outline: none;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.0416666666vw;
   border-radius: 12px;
   color: #335783;
   background-color: #fff;
@@ -109,7 +109,7 @@ body {
 }
 
 .header {
-  padding: 45px 0;
+  padding: 2.34375vw 0;
 }
 .header__wrap {
   display: flex;
@@ -127,12 +127,12 @@ body {
   height: auto;
 }
 .header__btn-login {
-  padding: 16px 30px;
+  padding: 0.833333333vw 1.5625vw;
 }
 .section-hero__wrap {
   display: flex;
   align-items: center;
-  padding: 98px 40px 98px 80px;
+  padding: 5.10416666667vw 2.0833333333vw 5.10416666667vw 4.1666666667vw;
   background: url('../img/bg.webp') no-repeat center / cover;
   border-radius: 30px;
 }
@@ -142,16 +142,16 @@ body {
 }
 .section-hero__title, .section-monitoring__title {
   margin: 0;
-  margin-bottom: 20px;
-  font-size: 52px;
+  margin-bottom: 1.041666666666vw;
+  font-size: 2.70833333333vw;
   font-weight: 700;
   line-height: 1.2em;
   color: #fff;
 }
 .section-hero__desc, .section-dop-dohod__text {
   margin: 0;
-  margin-bottom: 36px;
-  font-size: 26px;
+  margin-bottom: 1.875vw;
+  font-size: 1.35416666666vw;
   line-height: 1.3em;
   color: #fff;
 }
@@ -165,16 +165,16 @@ body {
   height: auto;
 }
 .section-bonuses {
-  padding: 100px 0;
+  padding: 5.208333333vw 0;
 }
 .title {
   margin: 0;
-  font-size: 52px;
+  font-size: 2.70833333333vw;
   line-height: 1.2;
 }
 .section-bonuses__title {
-  margin-bottom: 40px;
- color: #335783;
+  margin-bottom: 2.08333333333vw;
+  color: #335783;
 }
 .section-bonuses__list {
   display: flex;
@@ -189,7 +189,7 @@ body {
   flex: 0 1 33%;
 }
 .bonuses-card__img-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 1.25vw;
   max-width: 100%;
   width: 100%;
   height: 15.5vw;
@@ -207,15 +207,15 @@ body {
 }
 .bonuses-card__title {
   margin: 0;
-  margin-bottom: 12px;
-  font-size: 30px;
+  margin-bottom: 0.625vw;
+  font-size: 1.5625vw;
   line-height: 1.2em;
   font-weight: 600;
   color: #335783;
 }
 .bonuses-card__text {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 1.3em;
   color: #535353;
 }
@@ -231,8 +231,8 @@ body {
   text-align: center;
 }
 .section-dop-dohod__title {
-  margin: 0 0 20px;
-  font-size: 52px;
+  margin: 0 0 1.041666666667vw;
+  font-size: 2.7083333333333vw;
   font-weight: 700;
   line-height: 1.2em;
   color: #fff;
@@ -249,14 +249,14 @@ body {
   justify-content: space-between;
 }
 .footer__policity-link {
-  font-size: 18px;
+  font-size: 0.9375vw;
   line-height: 1em;
   font-weight: 500;
   color: #535353;
   text-underline-offset: 3px;
 }
 .footer__copyrights {
-  font-size: 18px;
+  font-size: 0.9375vw;
   line-height: 1em;
   font-weight: 500;
   color: #535353;
@@ -307,7 +307,7 @@ body {
 }
 .popup__block {
   max-width: 90%;
-  padding: 46px 36px;
+  padding: 2.395833333vw 1.875vw;
   border-radius: 30px;
   z-index: 2;
   /* overflow: hidden; */
@@ -353,8 +353,8 @@ body {
 
 .popup__title {
   margin: 0;
-  margin-bottom: 24px;
-  font-size: 30px;
+  margin-bottom: 1.25vw;
+  font-size: 1.5625vw;
   font-weight: 700;
   line-height: 1.3em;
   color: #335783;
@@ -374,9 +374,9 @@ body {
 }
 .form-input {
   display: block;
-  padding: 24px;
+  padding: 1.25vw;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 1.3em;
   color: #535353;
   border: 1px solid #D6D6D6;
@@ -396,17 +396,17 @@ body {
   width: 100%;
 }
 .login-popup .popup__block {
-  width: 665px;
+  width: 34.63541666666vw;
 }
 .login-popup__close {
   left: auto;
   bottom: auto;
   right: 0;
   top: 0;
-  padding: 24px;
-  width: 72px;
-  height: 72px;
-  display: block;
+  padding: 1.25vw;
+  width: 3.75vw;
+  height: 3.75vw;
+  display: flex;
   border-radius: 50%;
   border: none;
   background-color: #fff;
@@ -426,25 +426,41 @@ body {
 }
 .form-login__btn {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 1.145833333vw;
+  height: 1.145833333vw;
   position: absolute;
-  right: 24px;
+  right: 1.25vw;
   top: 50%;
   background-color: transparent;
   border: none;
   transform: translateY(-50%);
 }
 @media(min-width: 1920px) {
+  .section-hero__title {
+    width: 52px;
+    width: 100%;
+  }
   .section-dop-dohod__wrap {
     padding: 108px 260px;
   }
-  .section-hero__title, .title, .section-dop-dohod__title {
+  .section-hero__title, .title, .section-dop-dohod__title, .title  {
     font-size: 52px;
     font-weight: 700;
   }
+  .section-hero__desc, .section-dop-dohod__text {
+    font-size: 26px;
+  }
+  .footer__policity-link, .footer__link {
+    font-size: 18px;
+  }
+  .popup__title {
+    font-size: 30px;
+  }
+  .bonuses-card__text {
+    font-size: 24px;
+  }
 }
-@media(max-width: 1350px) {
+/* @media(max-width: 1350px) {
   .section-hero__title, .title, .section-dop-dohod__title, .section-monitoring__title {
     font-size: 38px;
     font-weight: 700;
@@ -457,6 +473,9 @@ body {
   }
   .section-hero__img-wrap {
     max-width: 40%;
+  }
+  .bonuses-card__title {
+    font-size: 30px;
   }
 }
 @media(max-width: 1000px) {
@@ -476,7 +495,7 @@ body {
   .section-dop-dohod__wrap {
     padding: 50px;
   }
-}
+} */
 
 .header__login {
   display: flex;
@@ -774,13 +793,16 @@ body {
   .choices__inner, .filters-form__label, .filters-form__btn {
     font-size: 20px;
   }
+  .btn {
+    font-size: 20px;
+  }
 }
 .section-main {
-  padding: 30px 0 60px;
+  padding: 1.5625vw 0 3.125vw;
 }
 .section-main__imges {
   display: flex;
-  gap: 30px;
+  gap: 1.5625vw;
 }
 .section-main__img-wrap {
   width: 50%;
@@ -1029,4 +1051,12 @@ th, td {
 }
 .apteka-popup__info-item-text {
   font-size: 1.5625vw; /* 30px */
+}
+@media(min-width: 1920px) {
+  .filters-form__label, .filters-form__btn{
+    font-size: 24px;
+  }
+  .choices__inner, .filters-form__label, .filters-form__btn {
+    font-size: 20px;
+  }
 }
