@@ -116,9 +116,14 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo-wrap {
-  max-width: 279px;
+.header__logo-wrap, .footer__logo-wrap {
+  max-width: 14.53125vw;
+  min-width: 150px;
   width: 100%;
+  height: auto;
+}
+.header__logo-img, .footer__logo-img {
+  max-width: 100%;
   height: auto;
 }
 .header__logo {
